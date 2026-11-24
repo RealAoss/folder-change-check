@@ -8,3 +8,15 @@ python app.py check restored manifest.json
 ```
 
 Requires Python 3.9+. Store the manifest outside the scanned folder. Save refuses to overwrite an existing manifest. The report lists added, removed and changed paths. Exit codes are 0 for a match or successful save, 1 for differences and 2 for errors. Empty directories, metadata and symbolic links are excluded.
+
+## Limitations
+
+The manifest covers regular-file contents and relative names. Empty folders, links and filesystem metadata are excluded.
+
+## Development
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for setup and test commands, and the [changelog](CHANGELOG.md) for project history.
+
+## License
+
+[MIT License](LICENSE). Copyright (c) 2026 folder-change-check contributors.
